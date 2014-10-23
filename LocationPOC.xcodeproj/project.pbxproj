@@ -14,6 +14,9 @@
 		365372D319F8A45F00DF3BEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365372D219F8A45F00DF3BEF /* Images.xcassets */; };
 		365372D619F8A45F00DF3BEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365372D419F8A45F00DF3BEF /* LaunchScreen.xib */; };
 		365372E219F8A45F00DF3BEF /* LocationPOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 365372E119F8A45F00DF3BEF /* LocationPOCTests.m */; };
+		365372EC19F8A47200DF3BEF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365372EB19F8A47200DF3BEF /* MapKit.framework */; };
+		365372F219F9408800DF3BEF /* CustomLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 365372F119F9408800DF3BEF /* CustomLocationService.m */; };
+		365372F419F9417800DF3BEF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365372F319F9417800DF3BEF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		365372DB19F8A45F00DF3BEF /* LocationPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		365372E019F8A45F00DF3BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365372E119F8A45F00DF3BEF /* LocationPOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationPOCTests.m; sourceTree = "<group>"; };
+		365372EB19F8A47200DF3BEF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		365372F019F9408800DF3BEF /* CustomLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLocationService.h; sourceTree = "<group>"; };
+		365372F119F9408800DF3BEF /* CustomLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLocationService.m; sourceTree = "<group>"; };
+		365372F319F9417800DF3BEF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365372F419F9417800DF3BEF /* CoreLocation.framework in Frameworks */,
+				365372EC19F8A47200DF3BEF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,7 @@
 			children = (
 				365372C419F8A45F00DF3BEF /* LocationPOC */,
 				365372DE19F8A45F00DF3BEF /* LocationPOCTests */,
+				365372ED19F9402D00DF3BEF /* Frameworks */,
 				365372C319F8A45F00DF3BEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,13 +91,8 @@
 		365372C419F8A45F00DF3BEF /* LocationPOC */ = {
 			isa = PBXGroup;
 			children = (
-				365372C919F8A45F00DF3BEF /* AppDelegate.h */,
-				365372CA19F8A45F00DF3BEF /* AppDelegate.m */,
-				365372CC19F8A45F00DF3BEF /* ViewController.h */,
-				365372CD19F8A45F00DF3BEF /* ViewController.m */,
-				365372CF19F8A45F00DF3BEF /* Main.storyboard */,
-				365372D219F8A45F00DF3BEF /* Images.xcassets */,
-				365372D419F8A45F00DF3BEF /* LaunchScreen.xib */,
+				365372EE19F9405000DF3BEF /* UI */,
+				365372EF19F9406900DF3BEF /* Services */,
 				365372C519F8A45F00DF3BEF /* Supporting Files */,
 			);
 			path = LocationPOC;
@@ -117,6 +122,38 @@
 				365372E019F8A45F00DF3BEF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		365372ED19F9402D00DF3BEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				365372F319F9417800DF3BEF /* CoreLocation.framework */,
+				365372EB19F8A47200DF3BEF /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		365372EE19F9405000DF3BEF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				365372C919F8A45F00DF3BEF /* AppDelegate.h */,
+				365372CA19F8A45F00DF3BEF /* AppDelegate.m */,
+				365372CC19F8A45F00DF3BEF /* ViewController.h */,
+				365372CD19F8A45F00DF3BEF /* ViewController.m */,
+				365372CF19F8A45F00DF3BEF /* Main.storyboard */,
+				365372D219F8A45F00DF3BEF /* Images.xcassets */,
+				365372D419F8A45F00DF3BEF /* LaunchScreen.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		365372EF19F9406900DF3BEF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				365372F019F9408800DF3BEF /* CustomLocationService.h */,
+				365372F119F9408800DF3BEF /* CustomLocationService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +205,14 @@
 				TargetAttributes = {
 					365372C119F8A45F00DF3BEF = {
 						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					365372DA19F8A45F00DF3BEF = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -222,6 +267,7 @@
 				365372CE19F8A45F00DF3BEF /* ViewController.m in Sources */,
 				365372CB19F8A45F00DF3BEF /* AppDelegate.m in Sources */,
 				365372C819F8A45F00DF3BEF /* main.m in Sources */,
+				365372F219F9408800DF3BEF /* CustomLocationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
