@@ -24,6 +24,7 @@ static CustomLocationService* sharedCustomLocationService;
         tracking = NO;
         locationManager = [[CLLocationManager alloc] init];
         locationManager.delegate = self;
+        _locationList = [[LocationList alloc]init];
     }
     
     return self;
@@ -36,6 +37,8 @@ static CustomLocationService* sharedCustomLocationService;
 -(BOOL)startTracking {
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     locationManager.pausesLocationUpdatesAutomatically = YES;
+    locationManager.distanceFilter = 1.0f;
+    locationManager.delegate = self;
     
     // If location services allow for location change monitoring:
     if([CLLocationManager locationServicesEnabled]) {
@@ -56,7 +59,8 @@ static CustomLocationService* sharedCustomLocationService;
     } else {
         return NO;
     }
-    return YES;
+    tracking = NO;
+    return ![self isTracking];
 }
 
 #pragma mark CLLocationManagerDelegate methods
@@ -71,7 +75,7 @@ static CustomLocationService* sharedCustomLocationService;
  *    locations is an array of CLLocation objects in chronological order.
  */
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    // TODO
+    [self.locationList addLocationList:locations];
 }
 
 /*

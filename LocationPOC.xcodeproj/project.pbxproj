@@ -17,6 +17,8 @@
 		365372EC19F8A47200DF3BEF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365372EB19F8A47200DF3BEF /* MapKit.framework */; };
 		365372F219F9408800DF3BEF /* CustomLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 365372F119F9408800DF3BEF /* CustomLocationService.m */; };
 		365372F419F9417800DF3BEF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365372F319F9417800DF3BEF /* CoreLocation.framework */; };
+		36DC7BFB19F9EF01008F8B59 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DC7BFA19F9EF01008F8B59 /* CoreData.framework */; };
+		36DC7BFF19FA8179008F8B59 /* LocationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DC7BFE19FA8179008F8B59 /* LocationList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		365372F019F9408800DF3BEF /* CustomLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLocationService.h; sourceTree = "<group>"; };
 		365372F119F9408800DF3BEF /* CustomLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLocationService.m; sourceTree = "<group>"; };
 		365372F319F9417800DF3BEF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		36DC7BFA19F9EF01008F8B59 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		36DC7BFD19FA8179008F8B59 /* LocationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationList.h; sourceTree = "<group>"; };
+		36DC7BFE19FA8179008F8B59 /* LocationList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36DC7BFB19F9EF01008F8B59 /* CoreData.framework in Frameworks */,
 				365372F419F9417800DF3BEF /* CoreLocation.framework in Frameworks */,
 				365372EC19F8A47200DF3BEF /* MapKit.framework in Frameworks */,
 			);
@@ -92,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				365372EE19F9405000DF3BEF /* UI */,
+				36DC7BFC19FA814E008F8B59 /* Models */,
 				365372EF19F9406900DF3BEF /* Services */,
 				365372C519F8A45F00DF3BEF /* Supporting Files */,
 			);
@@ -127,6 +134,7 @@
 		365372ED19F9402D00DF3BEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				36DC7BFA19F9EF01008F8B59 /* CoreData.framework */,
 				365372F319F9417800DF3BEF /* CoreLocation.framework */,
 				365372EB19F8A47200DF3BEF /* MapKit.framework */,
 			);
@@ -154,6 +162,15 @@
 				365372F119F9408800DF3BEF /* CustomLocationService.m */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		36DC7BFC19FA814E008F8B59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36DC7BFD19FA8179008F8B59 /* LocationList.h */,
+				36DC7BFE19FA8179008F8B59 /* LocationList.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +283,7 @@
 			files = (
 				365372CE19F8A45F00DF3BEF /* ViewController.m in Sources */,
 				365372CB19F8A45F00DF3BEF /* AppDelegate.m in Sources */,
+				36DC7BFF19FA8179008F8B59 /* LocationList.m in Sources */,
 				365372C819F8A45F00DF3BEF /* main.m in Sources */,
 				365372F219F9408800DF3BEF /* CustomLocationService.m in Sources */,
 			);
@@ -458,6 +476,7 @@
 				365372E719F8A45F00DF3BEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		365372E819F8A45F00DF3BEF /* Build configuration list for PBXNativeTarget "LocationPOCTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +485,7 @@
 				365372EA19F8A45F00DF3BEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

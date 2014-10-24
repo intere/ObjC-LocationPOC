@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import "LocationList.h"
 
 @interface CustomLocationService : NSObject<CLLocationManagerDelegate>
+@property (nonatomic, readonly) LocationList* locationList;
 -(BOOL)isTracking;
 -(BOOL)startTracking;
 -(BOOL)stopTracking;
-
 
 +(CustomLocationService *)sharedInstance;
 @end

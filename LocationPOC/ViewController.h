@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LocationList.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<LocationListListener>
 @property (weak, nonatomic) IBOutlet UIButton *trackingButton;
+@property (weak, nonatomic) IBOutlet UILabel *pointsLabel;
 - (IBAction)clickedTrackingButton:(UIButton *)sender;
-
 @end
 
