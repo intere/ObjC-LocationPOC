@@ -7,6 +7,7 @@
 //
 
 #import "CustomLocationService.h"
+#import <UIKit/UIKit.h>
 
 @interface CustomLocationService() {
     BOOL tracking;
@@ -34,27 +35,47 @@ static CustomLocationService* sharedCustomLocationService;
     return tracking;
 }
 
+//-(BOOL)startTracking {
+//    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+//    locationManager.pausesLocationUpdatesAutomatically = YES;
+//    locationManager.distanceFilter = 1.0f;
+//    locationManager.delegate = self;
+//    
+//    // If location services allow for location change monitoring:
+//    if([CLLocationManager locationServicesEnabled]) {
+//        [locationManager startUpdatingLocation];
+//        NSLog(@"LocationManager: Starting to track location updates");
+//        tracking = YES;
+//    } else {
+//        NSLog(@"LocationManager: significantLocationChangeMonitoring was not available");
+//        tracking = NO;
+//    }
+//    return [self isTracking];
+//}
+
 -(BOOL)startTracking {
-    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    locationManager.pausesLocationUpdatesAutomatically = YES;
-    locationManager.distanceFilter = 1.0f;
-    locationManager.delegate = self;
-    
-    // If location services allow for location change monitoring:
-    if([CLLocationManager locationServicesEnabled]) {
-        [locationManager startUpdatingLocation];
-        NSLog(@"LocationManager: Starting to track location updates");
-        tracking = YES;
-    } else {
-        NSLog(@"LocationManager: significantLocationChangeMonitoring was not available");
-        tracking = NO;
+    // Create the location manager if this object does not
+    // already have one.
+    if (!locationManager) {
+        locationManager = [[CLLocationManager alloc] init];
     }
+    
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    //kCLLocationAccuracyKilometer;
+    
+    // Set a movement threshold for new events.
+    locationManager.distanceFilter = 1.0; // meters
+    
+    [locationManager startUpdatingLocation];
+    tracking = YES;
     return [self isTracking];
 }
 
 -(BOOL)stopTracking {
     if([self isTracking]) {
-        [locationManager stopMonitoringSignificantLocationChanges];
+//        [locationManager stopMonitoringSignificantLocationChanges];
+        [locationManager stopUpdatingLocation];
         NSLog(@"LocationManager: Stopped taking location updates");
     } else {
         return NO;
@@ -75,7 +96,9 @@ static CustomLocationService* sharedCustomLocationService;
  *    locations is an array of CLLocation objects in chronological order.
  */
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    NSLog(@"Location Manager didUpdateLocations: %lu", (unsigned long)locations.count);
     [self.locationList addLocationList:locations];
+    NSLog(@"Location Manager has %lu points now", (unsigned long)[self.locationList getSize]);
 }
 
 /*
@@ -83,7 +106,7 @@ static CustomLocationService* sharedCustomLocationService;
  *    Invoked when location updates are automatically paused.
  */
 -(void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager {
-    NSLog(@"Location Managed Paused Location Updates");
+    NSLog(@"Location Manager Paused Location Updates");
 }
 
 /*
@@ -105,6 +128,8 @@ static CustomLocationService* sharedCustomLocationService;
  */
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     NSLog(@"Location Manager had an error: %@", error.localizedDescription);
+    [[[UIAlertView alloc]initWithTitle:@"Error" message:[NSString stringWithFormat:@"Unable to perform location tracking: %@", [error localizedDescription]] delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil] show];
+    
 }
 
 /*
