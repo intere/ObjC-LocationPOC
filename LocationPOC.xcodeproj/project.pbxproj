@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		364ACF991A5044FD002D2AE7 /* Serializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACF8E1A5044FD002D2AE7 /* Serializer.m */; };
+		364ACF9A1A5044FD002D2AE7 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACF901A5044FD002D2AE7 /* Track.m */; };
+		364ACF9B1A5044FD002D2AE7 /* TrackKeyPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACF921A5044FD002D2AE7 /* TrackKeyPoints.m */; };
+		364ACF9C1A5044FD002D2AE7 /* TrackListMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACF941A5044FD002D2AE7 /* TrackListMetadata.m */; };
+		364ACF9D1A5044FD002D2AE7 /* TrackListMetadataTracks.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACF961A5044FD002D2AE7 /* TrackListMetadataTracks.m */; };
+		364ACF9E1A5044FD002D2AE7 /* TrackPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACF981A5044FD002D2AE7 /* TrackPoints.m */; };
+		364ACFAB1A504523002D2AE7 /* track_key_points.json in Resources */ = {isa = PBXBuildFile; fileRef = 364ACFA11A504523002D2AE7 /* track_key_points.json */; };
+		364ACFAC1A504523002D2AE7 /* track_list_metadata_tracks.json in Resources */ = {isa = PBXBuildFile; fileRef = 364ACFA21A504523002D2AE7 /* track_list_metadata_tracks.json */; };
+		364ACFAD1A504523002D2AE7 /* track_list_metadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 364ACFA31A504523002D2AE7 /* track_list_metadata.json */; };
+		364ACFAE1A504523002D2AE7 /* track_points.json in Resources */ = {isa = PBXBuildFile; fileRef = 364ACFA41A504523002D2AE7 /* track_points.json */; };
+		364ACFAF1A504523002D2AE7 /* track.json in Resources */ = {isa = PBXBuildFile; fileRef = 364ACFA51A504523002D2AE7 /* track.json */; };
+		364ACFB01A504523002D2AE7 /* TrackKeyPointsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACFA61A504523002D2AE7 /* TrackKeyPointsTest.m */; };
+		364ACFB11A504523002D2AE7 /* TrackListMetadataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACFA71A504523002D2AE7 /* TrackListMetadataTest.m */; };
+		364ACFB21A504523002D2AE7 /* TrackListMetadataTracksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACFA81A504523002D2AE7 /* TrackListMetadataTracksTest.m */; };
+		364ACFB31A504523002D2AE7 /* TrackPointsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACFA91A504523002D2AE7 /* TrackPointsTest.m */; };
+		364ACFB41A504523002D2AE7 /* TrackTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 364ACFAA1A504523002D2AE7 /* TrackTest.m */; };
 		365372C819F8A45F00DF3BEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 365372C719F8A45F00DF3BEF /* main.m */; };
 		365372CB19F8A45F00DF3BEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 365372CA19F8A45F00DF3BEF /* AppDelegate.m */; };
 		365372CE19F8A45F00DF3BEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 365372CD19F8A45F00DF3BEF /* ViewController.m */; };
@@ -32,6 +48,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		364ACF8D1A5044FD002D2AE7 /* Serializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serializer.h; sourceTree = "<group>"; };
+		364ACF8E1A5044FD002D2AE7 /* Serializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Serializer.m; sourceTree = "<group>"; };
+		364ACF8F1A5044FD002D2AE7 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		364ACF901A5044FD002D2AE7 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		364ACF911A5044FD002D2AE7 /* TrackKeyPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackKeyPoints.h; sourceTree = "<group>"; };
+		364ACF921A5044FD002D2AE7 /* TrackKeyPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackKeyPoints.m; sourceTree = "<group>"; };
+		364ACF931A5044FD002D2AE7 /* TrackListMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackListMetadata.h; sourceTree = "<group>"; };
+		364ACF941A5044FD002D2AE7 /* TrackListMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackListMetadata.m; sourceTree = "<group>"; };
+		364ACF951A5044FD002D2AE7 /* TrackListMetadataTracks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackListMetadataTracks.h; sourceTree = "<group>"; };
+		364ACF961A5044FD002D2AE7 /* TrackListMetadataTracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackListMetadataTracks.m; sourceTree = "<group>"; };
+		364ACF971A5044FD002D2AE7 /* TrackPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackPoints.h; sourceTree = "<group>"; };
+		364ACF981A5044FD002D2AE7 /* TrackPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackPoints.m; sourceTree = "<group>"; };
+		364ACFA11A504523002D2AE7 /* track_key_points.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track_key_points.json; sourceTree = "<group>"; };
+		364ACFA21A504523002D2AE7 /* track_list_metadata_tracks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track_list_metadata_tracks.json; sourceTree = "<group>"; };
+		364ACFA31A504523002D2AE7 /* track_list_metadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track_list_metadata.json; sourceTree = "<group>"; };
+		364ACFA41A504523002D2AE7 /* track_points.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track_points.json; sourceTree = "<group>"; };
+		364ACFA51A504523002D2AE7 /* track.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track.json; sourceTree = "<group>"; };
+		364ACFA61A504523002D2AE7 /* TrackKeyPointsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackKeyPointsTest.m; sourceTree = "<group>"; };
+		364ACFA71A504523002D2AE7 /* TrackListMetadataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackListMetadataTest.m; sourceTree = "<group>"; };
+		364ACFA81A504523002D2AE7 /* TrackListMetadataTracksTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackListMetadataTracksTest.m; sourceTree = "<group>"; };
+		364ACFA91A504523002D2AE7 /* TrackPointsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackPointsTest.m; sourceTree = "<group>"; };
+		364ACFAA1A504523002D2AE7 /* TrackTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackTest.m; sourceTree = "<group>"; };
 		365372C219F8A45F00DF3BEF /* LocationPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365372C619F8A45F00DF3BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365372C719F8A45F00DF3BEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +113,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		364ACF8C1A503C32002D2AE7 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				364ACF8D1A5044FD002D2AE7 /* Serializer.h */,
+				364ACF8E1A5044FD002D2AE7 /* Serializer.m */,
+				364ACF8F1A5044FD002D2AE7 /* Track.h */,
+				364ACF901A5044FD002D2AE7 /* Track.m */,
+				364ACF911A5044FD002D2AE7 /* TrackKeyPoints.h */,
+				364ACF921A5044FD002D2AE7 /* TrackKeyPoints.m */,
+				364ACF931A5044FD002D2AE7 /* TrackListMetadata.h */,
+				364ACF941A5044FD002D2AE7 /* TrackListMetadata.m */,
+				364ACF951A5044FD002D2AE7 /* TrackListMetadataTracks.h */,
+				364ACF961A5044FD002D2AE7 /* TrackListMetadataTracks.m */,
+				364ACF971A5044FD002D2AE7 /* TrackPoints.h */,
+				364ACF981A5044FD002D2AE7 /* TrackPoints.m */,
+			);
+			name = generated;
+			sourceTree = "<group>";
+		};
+		364ACF9F1A504507002D2AE7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				364ACFA01A50450D002D2AE7 /* generated */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		364ACFA01A50450D002D2AE7 /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				364ACFA11A504523002D2AE7 /* track_key_points.json */,
+				364ACFA21A504523002D2AE7 /* track_list_metadata_tracks.json */,
+				364ACFA31A504523002D2AE7 /* track_list_metadata.json */,
+				364ACFA41A504523002D2AE7 /* track_points.json */,
+				364ACFA51A504523002D2AE7 /* track.json */,
+				364ACFA61A504523002D2AE7 /* TrackKeyPointsTest.m */,
+				364ACFA71A504523002D2AE7 /* TrackListMetadataTest.m */,
+				364ACFA81A504523002D2AE7 /* TrackListMetadataTracksTest.m */,
+				364ACFA91A504523002D2AE7 /* TrackPointsTest.m */,
+				364ACFAA1A504523002D2AE7 /* TrackTest.m */,
+			);
+			name = generated;
+			sourceTree = "<group>";
+		};
 		365372B919F8A45F00DF3BEF = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +199,7 @@
 		365372DE19F8A45F00DF3BEF /* LocationPOCTests */ = {
 			isa = PBXGroup;
 			children = (
+				364ACF9F1A504507002D2AE7 /* Models */,
 				365372E119F8A45F00DF3BEF /* LocationPOCTests.m */,
 				365372DF19F8A45F00DF3BEF /* Supporting Files */,
 			);
@@ -167,6 +250,7 @@
 		36DC7BFC19FA814E008F8B59 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				364ACF8C1A503C32002D2AE7 /* generated */,
 				36DC7BFD19FA8179008F8B59 /* LocationList.h */,
 				36DC7BFE19FA8179008F8B59 /* LocationList.m */,
 			);
@@ -271,6 +355,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364ACFAC1A504523002D2AE7 /* track_list_metadata_tracks.json in Resources */,
+				364ACFAD1A504523002D2AE7 /* track_list_metadata.json in Resources */,
+				364ACFAF1A504523002D2AE7 /* track.json in Resources */,
+				364ACFAE1A504523002D2AE7 /* track_points.json in Resources */,
+				364ACFAB1A504523002D2AE7 /* track_key_points.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,11 +370,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364ACF9A1A5044FD002D2AE7 /* Track.m in Sources */,
 				365372CE19F8A45F00DF3BEF /* ViewController.m in Sources */,
 				365372CB19F8A45F00DF3BEF /* AppDelegate.m in Sources */,
 				36DC7BFF19FA8179008F8B59 /* LocationList.m in Sources */,
+				364ACF991A5044FD002D2AE7 /* Serializer.m in Sources */,
 				365372C819F8A45F00DF3BEF /* main.m in Sources */,
+				364ACF9C1A5044FD002D2AE7 /* TrackListMetadata.m in Sources */,
+				364ACF9B1A5044FD002D2AE7 /* TrackKeyPoints.m in Sources */,
+				364ACF9D1A5044FD002D2AE7 /* TrackListMetadataTracks.m in Sources */,
 				365372F219F9408800DF3BEF /* CustomLocationService.m in Sources */,
+				364ACF9E1A5044FD002D2AE7 /* TrackPoints.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +388,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364ACFB01A504523002D2AE7 /* TrackKeyPointsTest.m in Sources */,
 				365372E219F8A45F00DF3BEF /* LocationPOCTests.m in Sources */,
+				364ACFB21A504523002D2AE7 /* TrackListMetadataTracksTest.m in Sources */,
+				364ACFB11A504523002D2AE7 /* TrackListMetadataTest.m in Sources */,
+				364ACFB31A504523002D2AE7 /* TrackPointsTest.m in Sources */,
+				364ACFB41A504523002D2AE7 /* TrackTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
