@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		364E12221A65E60B00050A75 /* SettingsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 364E12211A65E60B00050A75 /* SettingsService.m */; };
 		365372C819F8A45F00DF3BEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 365372C719F8A45F00DF3BEF /* main.m */; };
 		365372CB19F8A45F00DF3BEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 365372CA19F8A45F00DF3BEF /* AppDelegate.m */; };
 		365372CE19F8A45F00DF3BEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 365372CD19F8A45F00DF3BEF /* ViewController.m */; };
@@ -16,8 +17,28 @@
 		365372EC19F8A47200DF3BEF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365372EB19F8A47200DF3BEF /* MapKit.framework */; };
 		365372F219F9408800DF3BEF /* CustomLocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 365372F119F9408800DF3BEF /* CustomLocationService.m */; };
 		365372F419F9417800DF3BEF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 365372F319F9417800DF3BEF /* CoreLocation.framework */; };
+		366F7E4E1A6577F300B5298B /* Serializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E411A6577F300B5298B /* Serializer.m */; };
+		366F7E4F1A6577F300B5298B /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E431A6577F300B5298B /* Track.m */; };
+		366F7E501A6577F300B5298B /* TrackKeyPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E451A6577F300B5298B /* TrackKeyPoints.m */; };
+		366F7E511A6577F300B5298B /* TrackLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E471A6577F300B5298B /* TrackLog.m */; };
+		366F7E521A6577F300B5298B /* TrackMetadataList.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E491A6577F300B5298B /* TrackMetadataList.m */; };
+		366F7E531A6577F300B5298B /* TrackMetadataListTracks.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E4B1A6577F300B5298B /* TrackMetadataListTracks.m */; };
+		366F7E541A6577F300B5298B /* TrackPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E4D1A6577F300B5298B /* TrackPoints.m */; };
+		366F7E611A65780400B5298B /* track_key_points.json in Resources */ = {isa = PBXBuildFile; fileRef = 366F7E551A65780400B5298B /* track_key_points.json */; };
+		366F7E621A65780400B5298B /* track_log.json in Resources */ = {isa = PBXBuildFile; fileRef = 366F7E561A65780400B5298B /* track_log.json */; };
+		366F7E631A65780400B5298B /* track_metadata_list_tracks.json in Resources */ = {isa = PBXBuildFile; fileRef = 366F7E571A65780400B5298B /* track_metadata_list_tracks.json */; };
+		366F7E641A65780400B5298B /* track_metadata_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 366F7E581A65780400B5298B /* track_metadata_list.json */; };
+		366F7E651A65780400B5298B /* track_points.json in Resources */ = {isa = PBXBuildFile; fileRef = 366F7E591A65780400B5298B /* track_points.json */; };
+		366F7E661A65780400B5298B /* track.json in Resources */ = {isa = PBXBuildFile; fileRef = 366F7E5A1A65780400B5298B /* track.json */; };
+		366F7E671A65780400B5298B /* TrackKeyPointsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E5B1A65780400B5298B /* TrackKeyPointsTest.m */; };
+		366F7E681A65780400B5298B /* TrackLogTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E5C1A65780400B5298B /* TrackLogTest.m */; };
+		366F7E691A65780400B5298B /* TrackMetadataListTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E5D1A65780400B5298B /* TrackMetadataListTest.m */; };
+		366F7E6A1A65780400B5298B /* TrackMetadataListTracksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E5E1A65780400B5298B /* TrackMetadataListTracksTest.m */; };
+		366F7E6B1A65780400B5298B /* TrackPointsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E5F1A65780400B5298B /* TrackPointsTest.m */; };
+		366F7E6C1A65780400B5298B /* TrackTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 366F7E601A65780400B5298B /* TrackTest.m */; };
 		36DC7BFB19F9EF01008F8B59 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DC7BFA19F9EF01008F8B59 /* CoreData.framework */; };
 		36DC7BFF19FA8179008F8B59 /* LocationList.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DC7BFE19FA8179008F8B59 /* LocationList.m */; };
+		D4D67DC4074BD6C1DFDC517F /* libPods-LocationPOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC35C26FCDC3F5CD483E37E /* libPods-LocationPOC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22AF2B67D2EB0206E4CFB8A7 /* Pods-LocationPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationPOC/Pods-LocationPOC.debug.xcconfig"; sourceTree = "<group>"; };
+		364E12201A65E60B00050A75 /* SettingsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsService.h; sourceTree = "<group>"; };
+		364E12211A65E60B00050A75 /* SettingsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsService.m; sourceTree = "<group>"; };
 		365372C219F8A45F00DF3BEF /* LocationPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365372C619F8A45F00DF3BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365372C719F8A45F00DF3BEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,9 +71,38 @@
 		365372F019F9408800DF3BEF /* CustomLocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLocationService.h; sourceTree = "<group>"; };
 		365372F119F9408800DF3BEF /* CustomLocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLocationService.m; sourceTree = "<group>"; };
 		365372F319F9417800DF3BEF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		366F7E401A6577F300B5298B /* Serializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serializer.h; sourceTree = "<group>"; };
+		366F7E411A6577F300B5298B /* Serializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Serializer.m; sourceTree = "<group>"; };
+		366F7E421A6577F300B5298B /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		366F7E431A6577F300B5298B /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		366F7E441A6577F300B5298B /* TrackKeyPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackKeyPoints.h; sourceTree = "<group>"; };
+		366F7E451A6577F300B5298B /* TrackKeyPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackKeyPoints.m; sourceTree = "<group>"; };
+		366F7E461A6577F300B5298B /* TrackLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackLog.h; sourceTree = "<group>"; };
+		366F7E471A6577F300B5298B /* TrackLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackLog.m; sourceTree = "<group>"; };
+		366F7E481A6577F300B5298B /* TrackMetadataList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackMetadataList.h; sourceTree = "<group>"; };
+		366F7E491A6577F300B5298B /* TrackMetadataList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackMetadataList.m; sourceTree = "<group>"; };
+		366F7E4A1A6577F300B5298B /* TrackMetadataListTracks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackMetadataListTracks.h; sourceTree = "<group>"; };
+		366F7E4B1A6577F300B5298B /* TrackMetadataListTracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackMetadataListTracks.m; sourceTree = "<group>"; };
+		366F7E4C1A6577F300B5298B /* TrackPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackPoints.h; sourceTree = "<group>"; };
+		366F7E4D1A6577F300B5298B /* TrackPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackPoints.m; sourceTree = "<group>"; };
+		366F7E551A65780400B5298B /* track_key_points.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track_key_points.json; sourceTree = "<group>"; };
+		366F7E561A65780400B5298B /* track_log.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track_log.json; sourceTree = "<group>"; };
+		366F7E571A65780400B5298B /* track_metadata_list_tracks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track_metadata_list_tracks.json; sourceTree = "<group>"; };
+		366F7E581A65780400B5298B /* track_metadata_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track_metadata_list.json; sourceTree = "<group>"; };
+		366F7E591A65780400B5298B /* track_points.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track_points.json; sourceTree = "<group>"; };
+		366F7E5A1A65780400B5298B /* track.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track.json; sourceTree = "<group>"; };
+		366F7E5B1A65780400B5298B /* TrackKeyPointsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackKeyPointsTest.m; sourceTree = "<group>"; };
+		366F7E5C1A65780400B5298B /* TrackLogTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackLogTest.m; sourceTree = "<group>"; };
+		366F7E5D1A65780400B5298B /* TrackMetadataListTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackMetadataListTest.m; sourceTree = "<group>"; };
+		366F7E5E1A65780400B5298B /* TrackMetadataListTracksTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackMetadataListTracksTest.m; sourceTree = "<group>"; };
+		366F7E5F1A65780400B5298B /* TrackPointsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackPointsTest.m; sourceTree = "<group>"; };
+		366F7E601A65780400B5298B /* TrackTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackTest.m; sourceTree = "<group>"; };
+		366F7E721A657A0500B5298B /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		36DC7BFA19F9EF01008F8B59 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		36DC7BFD19FA8179008F8B59 /* LocationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationList.h; sourceTree = "<group>"; };
 		36DC7BFE19FA8179008F8B59 /* LocationList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationList.m; sourceTree = "<group>"; };
+		9E7595D693355C0965AB064B /* Pods-LocationPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationPOC/Pods-LocationPOC.release.xcconfig"; sourceTree = "<group>"; };
+		CDC35C26FCDC3F5CD483E37E /* libPods-LocationPOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocationPOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +113,7 @@
 				36DC7BFB19F9EF01008F8B59 /* CoreData.framework in Frameworks */,
 				365372F419F9417800DF3BEF /* CoreLocation.framework in Frameworks */,
 				365372EC19F8A47200DF3BEF /* MapKit.framework in Frameworks */,
+				D4D67DC4074BD6C1DFDC517F /* libPods-LocationPOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +127,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11ED5362D25291591DC5CC8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22AF2B67D2EB0206E4CFB8A7 /* Pods-LocationPOC.debug.xcconfig */,
+				9E7595D693355C0965AB064B /* Pods-LocationPOC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		364ACF8C1A503C32002D2AE7 /* generated */ = {
 			isa = PBXGroup;
 			children = (
+				366F7E401A6577F300B5298B /* Serializer.h */,
+				366F7E411A6577F300B5298B /* Serializer.m */,
+				366F7E421A6577F300B5298B /* Track.h */,
+				366F7E431A6577F300B5298B /* Track.m */,
+				366F7E441A6577F300B5298B /* TrackKeyPoints.h */,
+				366F7E451A6577F300B5298B /* TrackKeyPoints.m */,
+				366F7E461A6577F300B5298B /* TrackLog.h */,
+				366F7E471A6577F300B5298B /* TrackLog.m */,
+				366F7E481A6577F300B5298B /* TrackMetadataList.h */,
+				366F7E491A6577F300B5298B /* TrackMetadataList.m */,
+				366F7E4A1A6577F300B5298B /* TrackMetadataListTracks.h */,
+				366F7E4B1A6577F300B5298B /* TrackMetadataListTracks.m */,
+				366F7E4C1A6577F300B5298B /* TrackPoints.h */,
+				366F7E4D1A6577F300B5298B /* TrackPoints.m */,
 			);
 			name = generated;
 			sourceTree = "<group>";
@@ -91,8 +168,38 @@
 		364ACFA01A50450D002D2AE7 /* generated */ = {
 			isa = PBXGroup;
 			children = (
+				366F7E551A65780400B5298B /* track_key_points.json */,
+				366F7E561A65780400B5298B /* track_log.json */,
+				366F7E571A65780400B5298B /* track_metadata_list_tracks.json */,
+				366F7E581A65780400B5298B /* track_metadata_list.json */,
+				366F7E591A65780400B5298B /* track_points.json */,
+				366F7E5A1A65780400B5298B /* track.json */,
+				366F7E5B1A65780400B5298B /* TrackKeyPointsTest.m */,
+				366F7E5C1A65780400B5298B /* TrackLogTest.m */,
+				366F7E5D1A65780400B5298B /* TrackMetadataListTest.m */,
+				366F7E5E1A65780400B5298B /* TrackMetadataListTracksTest.m */,
+				366F7E5F1A65780400B5298B /* TrackPointsTest.m */,
+				366F7E601A65780400B5298B /* TrackTest.m */,
 			);
 			name = generated;
+			sourceTree = "<group>";
+		};
+		364E121E1A65E5E400050A75 /* CustomLocationService */ = {
+			isa = PBXGroup;
+			children = (
+				365372F019F9408800DF3BEF /* CustomLocationService.h */,
+				365372F119F9408800DF3BEF /* CustomLocationService.m */,
+			);
+			name = CustomLocationService;
+			sourceTree = "<group>";
+		};
+		364E121F1A65E5F600050A75 /* SettingsService */ = {
+			isa = PBXGroup;
+			children = (
+				364E12201A65E60B00050A75 /* SettingsService.h */,
+				364E12211A65E60B00050A75 /* SettingsService.m */,
+			);
+			name = SettingsService;
 			sourceTree = "<group>";
 		};
 		365372B919F8A45F00DF3BEF = {
@@ -102,6 +209,7 @@
 				365372DE19F8A45F00DF3BEF /* LocationPOCTests */,
 				365372ED19F9402D00DF3BEF /* Frameworks */,
 				365372C319F8A45F00DF3BEF /* Products */,
+				11ED5362D25291591DC5CC8C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +229,7 @@
 				36DC7BFC19FA814E008F8B59 /* Models */,
 				365372EF19F9406900DF3BEF /* Services */,
 				365372C519F8A45F00DF3BEF /* Supporting Files */,
+				366F7E721A657A0500B5298B /* Log.h */,
 			);
 			path = LocationPOC;
 			sourceTree = "<group>";
@@ -158,6 +267,7 @@
 				36DC7BFA19F9EF01008F8B59 /* CoreData.framework */,
 				365372F319F9417800DF3BEF /* CoreLocation.framework */,
 				365372EB19F8A47200DF3BEF /* MapKit.framework */,
+				CDC35C26FCDC3F5CD483E37E /* libPods-LocationPOC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,8 +288,8 @@
 		365372EF19F9406900DF3BEF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				365372F019F9408800DF3BEF /* CustomLocationService.h */,
-				365372F119F9408800DF3BEF /* CustomLocationService.m */,
+				364E121F1A65E5F600050A75 /* SettingsService */,
+				364E121E1A65E5E400050A75 /* CustomLocationService */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -201,9 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 365372E519F8A45F00DF3BEF /* Build configuration list for PBXNativeTarget "LocationPOC" */;
 			buildPhases = (
+				329C92D6E82D93E840FA7852 /* Check Pods Manifest.lock */,
 				365372BE19F8A45F00DF3BEF /* Sources */,
 				365372BF19F8A45F00DF3BEF /* Frameworks */,
 				365372C019F8A45F00DF3BEF /* Resources */,
+				7F83FC6E68C62DEDF09A18DE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,20 +403,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				366F7E641A65780400B5298B /* track_metadata_list.json in Resources */,
+				366F7E651A65780400B5298B /* track_points.json in Resources */,
+				366F7E631A65780400B5298B /* track_metadata_list_tracks.json in Resources */,
+				366F7E621A65780400B5298B /* track_log.json in Resources */,
+				366F7E611A65780400B5298B /* track_key_points.json in Resources */,
+				366F7E661A65780400B5298B /* track.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		329C92D6E82D93E840FA7852 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F83FC6E68C62DEDF09A18DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationPOC/Pods-LocationPOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		365372BE19F8A45F00DF3BEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				366F7E4F1A6577F300B5298B /* Track.m in Sources */,
+				366F7E531A6577F300B5298B /* TrackMetadataListTracks.m in Sources */,
+				366F7E541A6577F300B5298B /* TrackPoints.m in Sources */,
 				365372CE19F8A45F00DF3BEF /* ViewController.m in Sources */,
+				364E12221A65E60B00050A75 /* SettingsService.m in Sources */,
+				366F7E521A6577F300B5298B /* TrackMetadataList.m in Sources */,
 				365372CB19F8A45F00DF3BEF /* AppDelegate.m in Sources */,
 				36DC7BFF19FA8179008F8B59 /* LocationList.m in Sources */,
+				366F7E4E1A6577F300B5298B /* Serializer.m in Sources */,
 				365372C819F8A45F00DF3BEF /* main.m in Sources */,
+				366F7E511A6577F300B5298B /* TrackLog.m in Sources */,
+				366F7E501A6577F300B5298B /* TrackKeyPoints.m in Sources */,
 				365372F219F9408800DF3BEF /* CustomLocationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +472,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				366F7E6B1A65780400B5298B /* TrackPointsTest.m in Sources */,
+				366F7E6A1A65780400B5298B /* TrackMetadataListTracksTest.m in Sources */,
+				366F7E691A65780400B5298B /* TrackMetadataListTest.m in Sources */,
+				366F7E671A65780400B5298B /* TrackKeyPointsTest.m in Sources */,
+				366F7E6C1A65780400B5298B /* TrackTest.m in Sources */,
+				366F7E681A65780400B5298B /* TrackLogTest.m in Sources */,
 				365372E219F8A45F00DF3BEF /* LocationPOCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,28 +582,49 @@
 		};
 		365372E619F8A45F00DF3BEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22AF2B67D2EB0206E4CFB8A7 /* Pods-LocationPOC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/ECSlidingViewController\"",
+					"\"${PODS_ROOT}/Headers/Public/TestFlightSDK\"",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = LocationPOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/Pods/Headers/**";
 			};
 			name = Debug;
 		};
 		365372E719F8A45F00DF3BEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E7595D693355C0965AB064B /* Pods-LocationPOC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/ECSlidingViewController\"",
+					"\"${PODS_ROOT}/Headers/Public/TestFlightSDK\"",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = LocationPOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/Pods/Headers/**";
 			};
 			name = Release;
 		};
 		365372E919F8A45F00DF3BEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22AF2B67D2EB0206E4CFB8A7 /* Pods-LocationPOC.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -458,6 +644,7 @@
 		};
 		365372EA19F8A45F00DF3BEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E7595D693355C0965AB064B /* Pods-LocationPOC.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

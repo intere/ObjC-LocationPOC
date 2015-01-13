@@ -1,0 +1,13 @@
+{
+  "dir" : 0,
+  "dist" : 1603.783661514272,
+  "duration" : 772.1015610694885,
+  "idx_end" : 116,
+  "idx_start" : 0,
+  "max_elev" : 3243.417810440063,
+  "max_speed" : 5.884496612592504,
+  "min_elev" : 2767.097253799438,
+  "v_delta" : 472.719482421875,
+  "description" : "blah",
+  "type" : "system"
+}

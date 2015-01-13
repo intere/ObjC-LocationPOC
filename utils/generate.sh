@@ -25,5 +25,5 @@ do
     --output-location $(pwd)/tmp
 done
 
-# mv tmp/src/* ../LocationPOC/
-# mv tmp/test/* ../LocationPOCTests/
+mv tmp/src/* ../LocationPOC/
+mv tmp/test/* ../LocationPOCTests/

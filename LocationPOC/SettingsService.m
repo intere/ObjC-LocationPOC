@@ -7,12 +7,17 @@
 //
 
 #import "SettingsService.h"
+#import "Log.h"
 
 #define KEY_IS_TRACKING @"setting.is.tracking"
 
 static SettingsService *sharedSettingsService;
 
 @implementation SettingsService
+
+-(NSInteger)whatTimeIsIt {
+    return [NSDate date].timeIntervalSince1970 * 1000;
+}
 
 -(void)setTracking:(BOOL)isTracking {
     [[NSUserDefaults standardUserDefaults] setBool:isTracking forKey:KEY_IS_TRACKING];

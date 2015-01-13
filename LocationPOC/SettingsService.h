@@ -14,6 +14,8 @@
 -(void)setTracking:(BOOL)isTracking;
 /** Is/Was the app tracking?  */
 -(BOOL)isTracking;
+/** Get the current Date/Time.  */
+-(NSInteger)whatTimeIsIt;
 
 +(SettingsService *)getSharedInstance;
 @end
